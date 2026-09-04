@@ -6,7 +6,7 @@ on:
   workflow_dispatch:
 
 env:
-  DOCKER_IMAGE: devopsinsiders/axion-ui
+  DOCKER_IMAGE:  ${{ secrets.ACR_LOGIN_SERVER }}/axion-ui
 
 jobs:
   build-and-push:
